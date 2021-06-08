@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+*{
+    overflow: hidden; 
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Acme', sans-serif;
+
+}
+body{
+    background-image: url(https://wallpapercave.com/wp/wp3183064.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:100%;
+}
+
+#elo{
+    font-size: 10px;
+}
+.nav{
+    width: 100%;
+    background-color: black;
+    margin: 0px;
+    justify-content: center;
+    display: flex;
+    box-shadow: black 10px 2px 24px;
+
+}
+#imgks{
+
+    width: 200px;
+}
+
+
+/* FORMULARZ */
+
+            /* STRZALKA PIERWSZA */
+.strzalka{
+    left: 0%;
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left: 0px;
+    width: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.479);
+    transition: ease-in .4s;
+}
+.arrow{
+    margin-left: 10px;
+    font-size: 80px;
+    filter: drop-shadow(-2px 0px 2px rgba(43, 43, 43, 0.527));
+    color: white;
+    transition: ease-in .4s;
+}
+.arrow:hover{
+    filter: drop-shadow(2px 0px 2px rgba(189, 189, 189, 0.829));
+}
+.strzalka:hover{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+            /* STRZALKA DRUGA */
+.strzalka2{
+    opacity: 0%;
+    left: 0%;
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 600px;
+    margin-left: 0px;
+    width: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.479);
+    transition: ease-in .4s;
+}
+.arrow2:hover{
+    filter: drop-shadow(2px 0px 2px rgba(189, 189, 189, 0.829));
+}
+.strzalka2:hover{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.arrow2{
+    margin-left: 10px;
+    font-size: 80px;
+    filter: drop-shadow(-2px 0px 2px rgba(43, 43, 43, 0.527));
+    color: rgba(245, 245, 245, 0.829);
+    transition: ease-in .4s;
+}
+#schowaj{
+    cursor: pointer;
+    margin-top:17.6vh;
+    width: 60px;
+    color: rgb(247, 247, 247);
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: unset;
+    filter: drop-shadow(0px 1px 2px rgba(43, 43, 43, 0.801));
+    transition: ease-in .2s;
+    border: whitesmoke 2.5px solid;
+}
+#schowaj:hover{
+    color: rgb(58, 58, 58);
+    border: rgb(58, 58, 58) 2.5px solid;
+
+    margin-top:17.4vh;
+    filter: drop-shadow(0px 3px 2px rgba(43, 43, 43, 0.527));
+}
+#schowaj:focus{
+    margin-top:17.2vh;
+    filter: drop-shadow(0px 6px 2px rgba(43, 43, 43, 0.877));
+    color: rgb(58, 58, 58);
+
+}
+.form:hover{
+    filter: saturate(121%);
+}
+.form{ 
+    position: relative;
+    left: -22%;
+    color: white;
+    width: 22%;
+    margin: 0px;
+    height: 1000px;
+    background: rgb(218,208,0);
+background: linear-gradient(40deg, rgba(218,208,0,1) 0%, rgba(255,166,0,1) 100%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: black 2px 0px 24px;
+    font-size: 25px;
+    transition: ease-in .4s;
+}
+.form::selection{
+    left: 0px;
+}
+.form_body{
+    margin-top: 50px;
+}
+.form input, button{
+    filter: drop-shadow(0px 4px 3px rgba(43, 43, 43, 0.288));
+    text-align: center;
+    width:250px;
+    height: 30px;
+    margin-bottom: 10px;
+    transition: ease-in .2s;
+}
+.form input:focus, button:focus{
+    width:280px;
+}
+#formtext{
+    display: block;
+    filter: drop-shadow(0px 4px 2px rgba(43, 43, 43, 0.527));
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+#klp{
+    filter: drop-shadow(0px 2px 2px rgba(43, 43, 43, 0.527));
+}
+#rodzaj_pok{
+    width:200px;
+    height: 30px;
+    cursor: pointer;
+    transition: ease-in .15s;
+}
+#rodzaj_pok:focus{
+    width:230px;
+
+}
+
+#inputphp, #inputjs{
+    cursor: pointer;
+}
+
+#wynik2{
+    color: white;
+    filter: drop-shadow(0px 2px 2px rgba(43, 43, 43, 0.527));
+    left: 60px;
+    top: -400px;
+    font-size: 25px;
+    float: left;
+    position: relative;
+    display: none;
+    filter: drop-shadow(0px 2px 2px rgba(43, 43, 43, 0.527));
+}
+#wynik{
+    filter: drop-shadow(0px 2px 2px rgba(43, 43, 43, 0.527));
+
+}
+
+.mystyle{
+    background-color: pink;
+}
